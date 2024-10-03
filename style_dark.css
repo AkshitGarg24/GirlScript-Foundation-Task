@@ -1,0 +1,502 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    background-color: #1b1818;
+    color: white;
+}
+
+.poppins {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+html {
+    width: 100vw;
+}
+
+nav {
+    height: 90px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+
+.nav_list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+
+}
+
+.nav_list svg {
+    cursor: pointer;
+}
+
+.nav_list a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.15s ease-in-out;
+}
+
+.nav_list a:hover {
+    color: rgb(255 122 25);
+}
+
+#menu {
+    display: none;
+    cursor: pointer;
+}
+
+#nav_media {
+    width: 100%;
+    background-color: black;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 15px;
+}
+
+#nav_media a {
+    text-decoration: none;
+    color: white;
+}
+
+.heading {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    padding-top: 30px;
+    font-weight: 900;
+    font-size: 70px;
+    margin-top: 15px;
+}
+
+.head_desc {
+    padding-top: 15px;
+    text-align: center;
+    font-size: 24px;
+    color: rgb(255 122 25);
+    letter-spacing: 0.8px;
+    width: 95%;
+    margin: auto;
+}
+
+.year {
+    min-height: 100px;
+    max-width: 1150px;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    margin-top: 25px;
+    flex-wrap: wrap;
+    padding: 0 3%;
+}
+
+.year_btn {
+    width: 120px;
+    height: 60px;
+    border-radius: 23px;
+    background-color: #ea580c;
+    color: rgb(249, 236, 236);
+    font-weight: 600;
+    font-size: larger;
+    cursor: pointer;
+    box-shadow: 0px 0px 6px 0px #ff8949;
+    border: none;
+}
+
+.year_btn:hover {
+    background-color: rgb(255, 106, 0)
+}
+
+.team_content {
+    margin: auto;
+    margin-top: 50px;
+    height: auto;
+    min-height: 400px;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 45px;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.team_member {
+    width: 350px;
+    height: 500px;
+    transition: all 0.3s ease-in-out;
+
+    border-radius: 30px;
+}
+
+
+.member_image {
+    height: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_image {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 280px;
+    outline: 10px solid #ea580c;
+    outline-offset: 17px;
+    transition: all 0.3s ease-in-out;
+}
+
+.team_member:hover .box_image {
+    width: 280px;
+    height: 280px;
+    outline-offset: 2px;
+}
+
+.team_member:hover {
+    scale: 1.05;
+    box-shadow: 0px 0px 12px 1px #ff6701;
+}
+
+#image1 {
+    background-image: url(https://user-images.githubusercontent.com/63473496/152328358-1a556faf-f644-463c-bdfb-99bc0b28e366.png);
+}
+
+#image2 {
+    background-image: url(https://raw.githubusercontent.com/girlscript/GirlScript-Summer-of-Code/master/images/team/2020/mohit.jpg);
+}
+
+#image3 {
+    background-image: url(https://raw.githubusercontent.com/GSSoC24/.github/refs/heads/main/assets/Sowmiya.jpeg);
+}
+
+#image4 {
+    background-image: url(https://raw.githubusercontent.com/GSSoC24/.github/refs/heads/main/assets/Sanjay%20Viswanathan.jpg);
+}
+
+#image5 {
+    background-image: url(https://raw.githubusercontent.com/GSSoC24/.github/refs/heads/main/assets/Mastan%20Sayyad.png);
+}
+
+#image6 {
+    background-image: url(https://raw.githubusercontent.com/GSSoC24/.github/refs/heads/main/assets/Radhika%20Malpani.jpeg);
+}
+
+#image7 {
+    background-image: url(https://raw.githubusercontent.com/GSSoC24/.github/refs/heads/main/assets/Suhani%20Singh%20Paliwal.jpg);
+}
+
+.member_name {
+    font-weight: bold;
+}
+
+.member_name,
+.member_details {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+}
+
+.member_details {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.member_socials {
+    height: 43px;
+    margin-top: 13px;
+    background-color: #ff6701;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 50px;
+    width: 90%;
+    margin: auto;
+}
+
+.member_socials a {
+    height: 30px;
+}
+
+footer {
+    min-height: 350px;
+    background-image: linear-gradient(#ff8500, #ff6701);
+    height: auto;
+}
+
+.section-1 {
+    display: flex;
+    min-height: 300px;
+    margin: auto;
+    height: auto;
+    padding: 0 3%;
+    margin-bottom: 20px;
+}
+
+.img_sec1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 40%;
+}
+
+.img_sec1 img {
+    scale: 0.8;
+}
+
+.content-sec1 {
+    width: 210px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 35px;
+    width: 50%;
+
+}
+
+.new-sec {
+    display: flex;
+    width: 100%;
+    gap: 25px;
+}
+
+.heading-sec1 {
+    font-weight: bolder;
+}
+
+.heading-sec1,
+.desc-sec1 {
+    font-size: 17px;
+}
+
+.desc-sec1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.last_sec1 {
+    color: black;
+    display: flex;
+    font-size: 17px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 480px;
+    gap: 30px;
+    width: 100%;
+}
+
+.last_sec1 a button {
+    width: 125px;
+    height: 50px;
+    font-size: 17px;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+}
+
+.line {
+    height: 1px;
+    background-color: black;
+}
+
+.section-2 {
+    color: black;
+    display: flex;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.desc-sec1 a {
+    color: black;
+    text-decoration: none;
+}
+
+.desc-sec1 a:hover {
+    text-decoration: underline;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #ea580c;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#back-to-top:hover {
+    background-color: #ff6701;
+}
+
+.content-sec2 {
+    display: flex;
+    width: 100%;
+}
+
+@media screen and (max-width:1300px) {
+
+    .heading-sec1,
+    .desc-sec1,
+    .last_sec1 {
+        font-size: 15px;
+    }
+
+    .img_sec1 {
+        scale: 0.8;
+    }
+
+    .year {
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width:1050px) {
+    .section-1 {
+        flex-direction: column;
+    }
+
+    .img_sec1 {
+        width: 100%;
+    }
+
+    .nav_list a {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width:800px) {
+
+    .heading-sec1,
+    .desc-sec1,
+    .last_sec1 {
+        font-size: 13px;
+    }
+
+    .last_sec1 a button {
+        width: 90px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .section-2 {
+        font-size: 11px;
+    }
+
+    .heading {
+        font-size: 50px;
+    }
+
+    .head_desc {
+        font-size: 21px;
+    }
+
+    .year_btn {
+        width: 100px;
+        height: 50px;
+        border-radius: 20px;
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .new-sec {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heading-sec1,
+    .desc-sec1,
+    .last_sec1 {
+        font-size: 12px;
+    }
+
+    .section-2 {
+        font-size: 8px;
+    }
+
+    .last_sec1 a button {
+        width: 80px;
+        height: 25px;
+        font-size: 12px;
+    }
+
+    .heading {
+        font-size: 40px;
+    }
+
+    .head_desc {
+        font-size: 18px;
+    }
+
+    .year_btn {
+        width: 85px;
+        height: 45px;
+        border-radius: 16px;
+        font-size: 15px;
+    }
+
+    .team_member {
+        scale: 0.8;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .img_sec1 {
+        scale: 0.65;
+    }
+}
+
+.more_sec {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+
+}
